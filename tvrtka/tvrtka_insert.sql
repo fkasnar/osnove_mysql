@@ -1,3 +1,4 @@
+
 INSERT INTO grad (ime, zip) VALUES ('Zagreb', '10000');
 INSERT INTO grad (ime, zip) VALUES ('Split', '21000');
 INSERT INTO grad (ime, zip) VALUES ('Pula', '52000');

@@ -1,4 +1,44 @@
-[ZoneTransfer]
-ZoneId=3
-ReferrerUrl=https://github.com/adobrini-algebra/osnove_mysql/blob/main/tvrtka/baza%20tvrtka.docx
-HostUrl=https://raw.githubusercontent.com/adobrini-algebra/osnove_mysql/main/tvrtka/baza%20tvrtka.docx
+Neka tvrtka sadržava nekoliko poslovnica u kojima zapošljava radnike. Svaki odjel ima šefa koji je ujedno i radnik poduzeća. Stvorite ER dijagram, te ga pretvorite u tablicu i na kraju normalizirajte.
+
+Poslovnice
+id	name	address	Grad_id
+1	Trgovina Zagreb	Ulica Grada Vukovara 55	1
+2	Trgovina Pula	Trg Maršala Tita 3	3
+3	Trgovina Split	Pojišanska cesta 25	2
+
+Zaposlenici
+id	name	address	Poslovnica_id	Grad_id
+1	Ivo Ivić	Ulica Grada Gospića 12	1	1
+2	Ana Anić	Kazališni Trg 2	1	1
+3	Marko Markić	Arsenalska 78	2	3
+4	Zoran Zoranić	Riva 32	3	2
+5	Ivan Horvat	Bolnička cesta 66	3	2
+
+Grad
+id	name	zip
+1	Zagreb	10000
+2	Split	21000
+3	Pula	52000
+
+
+Voditelji poslovnica – primjer za m-n relationship – pivot tablica
+Poslovnica_id	Zaposlenik_id
+1	1
+2	3
+3	4
+
+
+
+
+
+
+
+
+
+
+
+
+
+Trgovina ima nekoliko skladišnih mjesta po kojima grupira svoje proizvode. Na primjer cigle i crjepovi idu na jedno skladišno mjesto, a drvena građa (daske, grede..) na drugo. Svako skladišno mjesto ima nekoliko radnika i svog voditelja. Na temelju danog ER dijagrama stvorite normalizirane tablice
+
+
